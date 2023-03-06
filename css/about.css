@@ -1,7 +1,4 @@
 /* Página de sobre */
-body{
-    min-height: 100vh;
-}
 
 .sobre{
     border: #9d0208 4px solid;
@@ -17,18 +14,4 @@ body{
 
 main{
     height: 70vh;
-}
-
-footer{
-    background-color: #9d0208;
-    color: aliceblue;
-    height: 30vh;
-    margin-top: 2%;
-}
-
-.container-footer{
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
