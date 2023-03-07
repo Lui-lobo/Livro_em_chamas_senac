@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 body{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
     font-weight: 800;
-    }
-
-.caixa-home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
-    background: url("../image/florest_copiar.jpg") no-repeat rgba(180,0,0,0.50);
-    background-image: no-repeat;
-    background-size: 100% 100%;
+    /* background-color: black; */
+    background-color:#6A040F;
 }
+    
+.caixa-home{
+    width: 100%;
+    height: 700px;
+    background-color: #6A040F;
+    background-image: url("../image/fundo_jogos_vorazes.png");
 
+}
 h1{
     font-size: 50px;
     margin-left: 39%;
@@ -28,14 +24,9 @@ h1{
 }
 .simbolo-imagem {
     background-image: url("../image/simbolos_vorazes.png");
-    background-color: #f5f5f5;
-    border-radius: 50%;
-    z-index: 0;
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
-    justify-content: center;
-    align-items: center;
     width: 35%;
     height: 70%;
     margin-left: 32%;
@@ -45,31 +36,6 @@ h1{
     z-index: 999;
     /* border: yellowgreen 1px solid; */
 }
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-text span {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-text p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 200px;
-    font-weight: 800;
-    font-size: 55px;
-    color: #af612d;
-}
-
 .navbar{
     display: flex;
     flex-flow: row wrap;
@@ -89,8 +55,8 @@ h1{
     /*border: 1px solid black;*/
     text-align: right;
     padding: 20px;
-}
 
+}
 .menu a{
     color: #6A040F;
     text-decoration: none;
@@ -123,9 +89,87 @@ h1{
     font-size: 20px;
 }
 
+/*Parte personagens */
 
-.footer-dark{
+.cards{
+    width: 100%;
     display: flex;
+    padding: 32px;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+}
+
+/* .brd-red{
+    border: red 4px solid;
+    border-radius: 10px;
+}
+
+.brd-blue{
+    border: blue 4px solid;
+    border-radius: 10px;
+}
+
+.brd-green{
+    border: green 4px solid;
+    border-radius: 10px;
+} */
+
+
+.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 600px;
+    margin-left: 32px;
+}
+
+.cards section.card:first-child{
+    margin-left: 0px;
+}
+
+.cards section.card .icon{
+    width: 300px;
+    height: 300px;
+
+}
+
+.cards section.card img{
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cards section.card h3{
+    margin: 16px 0;
+    color: rgb(196, 144, 13);
+}
+
+.cards section.card span{
+    max-width: 300px;
+    font-size: 100%;
+    margin-bottom: 16px;
+    text-align: justify;
+    overflow: scroll;
+    padding: 10px;
+    overflow-x: hidden
+}
+
+@media screen and (max-width: 720px) {
+    .cards{
+        flex-direction: column;
+    }
+    .cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    .cards section.card:last-child{
+        margin-bottom: 0;
+    } 
 }
